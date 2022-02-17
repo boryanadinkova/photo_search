@@ -1,0 +1,18 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .btn {
+    @apply py-2 px-4 rounded-2xl transition ease-in-out duration-500;
+  }
+  .btn-red {
+    @apply bg-transparent  text-red-700 border border-red-700;
+  }
+  .btn-red:active,
+  .btn-red:hover,
+  .active {
+    @apply bg-red-700 border-red-700 text-white border-transparent;
+  }
+}
